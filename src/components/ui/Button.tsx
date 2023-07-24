@@ -1,8 +1,8 @@
 
 export default function Button() {
     return (
-        <>
-            <button className="w-40 p-3 text-white rounded-3xl bg-orange hover:shadow-lg">Get Started</button>
-        </>
+        <div className="flex justify-center sm:justify-start">
+            <button className="w-40 text-sm p-4 text-white rounded-3xl bg-orange shadow-lg hover:bg-orange-pale">Get Started</button>
+        </div>
     )
 }

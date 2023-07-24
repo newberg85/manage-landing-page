@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "../Header/Header";
 import Button from "../ui/Button";
+import Slider from "../Slider/Slider"
 
 // images
 import Ilustration from "public/assets/images/illustration-intro.svg";
@@ -20,7 +21,7 @@ export default function Main() {
                     <p className="w-full sm:w-1/2 text-silver">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
                     <Button />
                 </div>
-                <div className="w-full sm:w-1/2 justify-center flex">
+                <div className="w-full sm:w-1/2 justify-center flex mt-8">
                     <Image 
                     className="absolute top-[-200px] right-[-90px] z-[-1] "
                     src={Simplifyt}
@@ -34,10 +35,17 @@ export default function Main() {
                     height={600}
                     alt="Picture of the author"
                     />
+                    <Image 
+                    className="absolute top-[550px] right-[-200px] z-[-1] sm:hidden"
+                    src={Simplifyt}
+                    width={400}
+                    height={400}
+                    alt="Image"
+                    />
                 </div>
             </div>
 
-            <div className="justify-between flex flex-col-reverse sm:flex-row w-full overflow-x-hidden font-body">
+            <div className="justify-between flex flex-col sm:flex-row w-full overflow-x-hidden font-body mt-28">
                 <div className=" text-center sm:text-left w-full sm:w-1/2 flex flex-col gap-7">
                     <h1 className="text-5xl font-[700] text-dark-blue leading-tight sm:text-5xl w-full ">What’s different about Manage?</h1>
                     <p className="w-full sm:w-1/2 text-silver">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams. </p>
@@ -71,6 +79,12 @@ export default function Main() {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className="w-full h-full sm:h-full sm:w-screen flex flex-col gap-4 mt-28">
+                <h1 className="text-5xl font-[700] text-dark-blue leading-tight sm:text-5xl w-full text-center mb-8">What they’ve said</h1>
+                <Slider />
+                <Button />
             </div>
         </>
     )
