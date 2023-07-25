@@ -16,7 +16,7 @@ export default function Main() {
         <>
             <Header />
 
-            <div className="justify-between flex flex-col-reverse sm:flex-row w-full items-center overflow-x-hidden font-body overflow-hidden">
+            <div className="justify-between flex flex-col-reverse sm:flex-row w-full items-center overflow-x-hidden font-body overflow-hidden relative sm:static">
                 <div className="justify-center text-center sm:text-left w-full sm:w-1/2 flex flex-col gap-7">
                     <h1 className="text-5xl font-[700] text-dark-blue leading-tight sm:text-7xl">Bring everyone together to build better products.</h1>
                     <p className="w-full sm:w-1/2 text-silver">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
@@ -94,7 +94,7 @@ export default function Main() {
                 <div className="w-1/2 z-20 flex">
                 <h1 className="text-5xl font-[700] text-white leading-tight sm:text-5xl w-full mb-8 text-center sm:text-left">Simplify how your team works today.</h1>
                 </div>
-                <div className=" flex justify-center z-20">
+                <div className=" flex justify-center z-0">
                 <button className="w-40 text-sm p-4 text-orange rounded-3xl bg-white shadow-lg hover:bg-orange-pale">Get Started</button>
                 </div>
                 <Image 
