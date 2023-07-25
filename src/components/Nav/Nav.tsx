@@ -6,9 +6,14 @@ import Link from 'next/link';
 import Button from '../ui/Button';
 import Logo from "public/assets/images/logo.svg";
 import Hamburger from "public/assets/images/icon-hamburger.svg";
+import Close from "public/assets/images/icon-close.svg"
 
 
 function NavBar() {
+  const toggleNavbar = () => {
+    setNavbar((prevNavbar) => !prevNavbar);
+  };
+
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
@@ -35,10 +40,10 @@ function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <>
-      <nav className="w-full  fixed top-0 left-0 right-0 z-10" style={menuStyle}>
+      <nav className="w-full fixed top-0 left-0 right-0 z-10" style={menuStyle}>
         <div className="justify-between px-4 mx-auto lg:max-w-full md:items-center md:flex md:px-36">
           <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block">
+            <div className="flex items-center justify-between py-3 py-5 md:block">
               {/* LOGO */}
               <Link href="/">
                 <Image 
@@ -51,11 +56,11 @@ function NavBar() {
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="md:hidden">
                 <button
-                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                  className="p-2 text-gray-700 rounded-md outline-none " onClick={toggleNavbar}
                 
                 >
                   {navbar ? (
-                    <Image src="/close.svg" width={30} height={30} alt="logo" />
+                    <Image src={Close} width={30} height={30} alt="logo" />
                   ) : (
                     <Image
                       src={Hamburger}

@@ -104,11 +104,8 @@ export default function Main() {
                     height={4000}
                     alt="Image"
                     />
-            </div>
-
-            <div>
-                <Footer />
-            </div>
+            </div>        
+            <Footer />         
         </>
     )
 }
