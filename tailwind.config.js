@@ -15,6 +15,7 @@ module.exports = {
       'orange': '#f25f3a',
       'orange-pale': '#fb8e76',
       'dark-blue': '#242d52',
+      'very-dark-blue': '#1d1e25',
       'purple': '#3f3cbb',
       'midnight': '#121063',
       'metal': '#565584',
