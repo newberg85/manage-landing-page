@@ -37,7 +37,7 @@ export default function Main() {
                     alt="Picture of the author"
                     />
                     <Image 
-                    className="absolute top-[550px] right-[-200px] z-[-1] sm:hidden"
+                    className="absolute top-[550px] right-[-200px] z-[-1] hidden sm:block"
                     src={Simplifyt}
                     width={400}
                     height={400}
