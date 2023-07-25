@@ -24,7 +24,7 @@ export default function Main() {
                 </div>
                 <div className="w-full sm:w-1/2 justify-center flex mt-8">
                     <Image 
-                    className="absolute top-[-200px] right-[-90px] z-[-1] "
+                    className="absolute top-[-200px] right-[-90px] z-[-1] hidden sm:block"
                     src={Simplifyt}
                     width={800}
                     height={4000}

@@ -13,7 +13,7 @@ import NavBar from "../Nav/Nav"
 export default function Header() {
     return (
         <header className="relative w-screen">
-            <div className="block sm:hidden">
+            <div className="block lg:hidden md:block sm:hidden">
             <Image 
                     className="absolute top-[-200px] right-[-90px] z-[-1] "
                     src={Simplifyt}

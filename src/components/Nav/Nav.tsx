@@ -54,7 +54,7 @@ function NavBar() {
                 />
               </Link>
               {/* HAMBURGER BUTTON FOR MOBILE */}
-              <div className="md:hidden">
+              <div className="lg:hidden">
                 <button
                   className="p-2 text-gray-700 rounded-md outline-none " onClick={toggleNavbar}
                 
@@ -76,32 +76,32 @@ function NavBar() {
           </div>
           <div>
             <div
-              className={`flex-1  items-center md:block md:pb-0 md:mt-0 ${
+              className={`flex-1  items-center block md:hidden lg:block sm:hidden md:pb-0 md:mt-0 ${
                 navbar ? 'p-12 md:p-0 block' : 'hidden'
               }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="text-base text-dark-blue py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-silver md:hover:bg-transparent">
+                <li className="text-base text-dark-blue py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-silver md:hover:bg-transparent md:text-sm">
                   <Link href="#about">
                     Pricing
                   </Link>
                 </li>
-                <li className="text-base text-dark-blue py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-silver md:hover:bg-transparent">
+                <li className="text-base text-dark-blue py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-silver md:hover:bg-transparent md:text-sm">
                   <Link href="#blog">
                     Product
                   </Link>
                 </li>
-                <li className="text-base text-dark-blue py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-silver md:hover:bg-transparent">
+                <li className="text-base text-dark-blue py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-silver md:hover:bg-transparent md:text-sm">
                   <Link href="#contact">
                     About Us
                   </Link>
                 </li>
-                <li className="text-base text-dark-blue py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-silver  border-purple-900  md:hover:text-silver md:hover:bg-transparent">
+                <li className="text-base text-dark-blue py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-silver  border-purple-900  md:hover:text-silver md:hover:bg-transparent md:text-sm">
                   <Link href="#projects">
                     Careers
                   </Link>
                 </li>
-                <li className="text-base text-dark-blue py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-silver  border-purple-900  md:hover:text-silver md:hover:bg-transparent">
+                <li className="text-base text-dark-blue py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-silver  border-purple-900  md:hover:text-silver md:hover:bg-transparent md:text-sm">
                   <Link href="#projects">
                     Community
                   </Link>
@@ -111,7 +111,7 @@ function NavBar() {
           </div>
 
           <div>
-            <div className='hidden flex items-center  py-3 md:py-5 sm:block '>
+            <div className='hidden flex items-center  py-3 md:py-5 lg:block md:hidden sm: '>
                 <Button></Button>
             </div>
           </div>
