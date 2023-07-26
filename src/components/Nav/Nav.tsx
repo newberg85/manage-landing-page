@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from '../ui/Button';
+
+//images
 import Logo from "public/assets/images/logo.svg";
 import Hamburger from "public/assets/images/icon-hamburger.svg";
 import Close from "public/assets/images/icon-close.svg"
@@ -46,18 +48,18 @@ function NavBar() {
             <div className="flex items-center justify-between py-3 py-5 md:block">
               {/* LOGO */}
               <Link href="/">
-                <Image 
-                src={Logo}
-                width={150}
-                height={250}
-                alt="Picture of the author"
+                <Image
+                  src={Logo}
+                  width={150}
+                  height={250}
+                  alt="Picture of the author"
                 />
               </Link>
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="lg:hidden">
                 <button
                   className="p-2 text-gray-700 rounded-md outline-none " onClick={toggleNavbar}
-                
+
                 >
                   {navbar ? (
                     <Image src={Close} width={30} height={30} alt="logo" />
@@ -76,9 +78,8 @@ function NavBar() {
           </div>
           <div>
             <div
-              className={`flex-1  items-center block md:hidden lg:block sm:hidden md:pb-0 md:mt-0 ${
-                navbar ? 'p-12 md:p-0 block' : 'hidden'
-              }`}
+              className={`flex-1  items-center block md:hidden lg:block sm:hidden md:pb-0 md:mt-0 ${navbar ? 'p-12 md:p-0 block' : 'hidden'
+                }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="text-base text-dark-blue py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-silver md:hover:bg-transparent md:text-sm">
@@ -112,7 +113,7 @@ function NavBar() {
 
           <div>
             <div className='hidden flex items-center  py-3 md:py-5 lg:block md:hidden sm: '>
-                <Button></Button>
+              <Button></Button>
             </div>
           </div>
         </div>

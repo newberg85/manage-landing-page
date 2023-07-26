@@ -23,25 +23,25 @@ export default function Main() {
                     <Button />
                 </div>
                 <div className="w-full sm:w-1/2 justify-center flex mt-8">
-                    <Image 
-                    className="absolute top-[-200px] right-[-90px] z-[-1] hidden xl:block"
-                    src={Simplifyt}
-                    width={800}
-                    height={4000}
-                    alt="Image"
+                    <Image
+                        className="absolute top-[-200px] right-[-90px] z-[-1] hidden xl:block"
+                        src={Simplifyt}
+                        width={800}
+                        height={4000}
+                        alt="Image"
                     />
-                    <Image 
-                    src={Ilustration}
-                    width={600}
-                    height={600}
-                    alt="Picture of the author"
+                    <Image
+                        src={Ilustration}
+                        width={600}
+                        height={600}
+                        alt="Picture of the author"
                     />
-                    <Image 
-                    className="absolute top-[550px] right-[-200px] z-[-1] hidden xl:block"
-                    src={Simplifyt}
-                    width={400}
-                    height={400}
-                    alt="Image"
+                    <Image
+                        className="absolute top-[550px] right-[-200px] z-[-1] hidden xl:block"
+                        src={Simplifyt}
+                        width={400}
+                        height={400}
+                        alt="Image"
                     />
                 </div>
             </div>
@@ -86,26 +86,26 @@ export default function Main() {
                 <h1 className="text-5xl font-[700] text-dark-blue leading-tight sm:text-5xl w-full text-center mb-8">What they’ve said</h1>
                 <Slider />
                 <div className="w-full flex justify-center">
-                <Button />
+                    <Button />
                 </div>
             </div>
 
             <div className="bg-orange w-screen h-full sm:h-full sm:w-screen flex flex-col sm:flex-row gap-4 mt-28 items-center justify-around relative pt-14 pb-14 overflow-hidden ">
                 <div className="w-1/2 z-20 flex">
-                <h1 className="text-5xl font-[700] text-white leading-tight sm:text-5xl w-full mb-8 text-center sm:text-left">Simplify how your team works today.</h1>
+                    <h1 className="text-5xl font-[700] text-white leading-tight sm:text-5xl w-full mb-8 text-center sm:text-left">Simplify how your team works today.</h1>
                 </div>
                 <div className=" flex justify-center z-0">
-                <button className="w-40 text-sm p-4 text-orange rounded-3xl bg-white shadow-lg hover:bg-orange-pale">Get Started</button>
+                    <button className="w-40 text-sm p-4 text-orange rounded-3xl bg-white shadow-lg hover:bg-orange-pale">Get Started</button>
                 </div>
-                <Image 
-                    className="absolute -top-40 -right-60 "
+                <Image
+                    className="absolute -top-28 -right-60 "
                     src={Simplifym}
                     width={2000}
                     height={4000}
                     alt="Image"
-                    />
-            </div>        
-            <Footer />         
+                />
+            </div>
+            <Footer />
         </>
     )
 }
